@@ -7,7 +7,7 @@ import { createPost,updatePost } from '../../actions/posts';
 import { useNavigate } from 'react-router-dom';
 
 
-export default function Form({currentId,setCurrentId}) {
+const Form=({currentId,setCurrentId}) =>{
   const classes = useStayls();
   const navigate = useNavigate();
   const [postData,setPostData] = useState({
@@ -76,3 +76,6 @@ export default function Form({currentId,setCurrentId}) {
   )
 }
 
+
+
+export default Form;
