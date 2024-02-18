@@ -15,7 +15,7 @@ import useStayls from "./styles";
 import { getPostsBySearch } from "../../actions/posts.js";
 import Paginate from "../Pagination/Pagination.jsx";
 import { useNavigate, useLocation } from "react-router-dom";
-import MaterialUiChipInput from "material-ui-chip-input";
+// import MaterialUiChipInput from "material-ui-chip-input";
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -82,14 +82,14 @@ function Home() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <MaterialUiChipInput
+              {/* <MaterialUiChipInput
                 style={{ margin: "10px 0" }}
                 value={tags}
                 onAdd={(chip) => handleAddChip(chip)}
                 onDelete={(chip) => handleDeleteChip(chip)}
                 label="Search Tags"
                 variant="outlined"
-              />
+              /> */}
               <Button
                 onClick={searchPost}
                 className={classes.searchButton}
