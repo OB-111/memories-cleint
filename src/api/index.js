@@ -1,7 +1,7 @@
 import axios from "axios";
 // const API = axios.create({ baseURL: "http://localhost:5000" });
 
-const API = axios.create({ baseURL: "https://memories-app-mg2m.onrender.com" });
+const API = axios.create({ baseURL: "https://decentralized-app.onrender.com" });
 // for the backend can be retrive the spesific header that will handel in the middelwar auth, and then the backend will know that the use signein
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
